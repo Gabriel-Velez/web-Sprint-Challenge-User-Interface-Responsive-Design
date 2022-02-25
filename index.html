@@ -3,12 +3,12 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Sprint Challenge - Home</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
 </head>
 
 <body>
@@ -21,29 +21,25 @@
                 </a>
                 <!-- nav -->
                 <nav>
-                    <a href="menu.html">Menu </a>
-                    <a href="#">Reservations </a>
-                    <a href="#">Special Offers</a>
-                    <a href="#">Contact</a>
+                    <div class="linksWrapper">
+                        <a href="menu.html">Menu </a>
+                        <a href="#">Reservations </a>
+                        <a href="#">Special Offers</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="smWrapper">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
                 </nav>
-                <div class="smWrapper">
-                    <!-- <a href="facebook.com">-->
-                    <i class="fab fa-facebook-square"></i>
-                    <!--  </a>-->
-                    <!--<a href="twitter.com">-->
-                    <i class="fab fa-twitter-square"></i>
-                    <!--  </a>-->
-                    <!-- <a href="instagram.com">-->
-                    <i class="fab fa-instagram-square"></i>
-                    <!-- </a>-->
-                </div>
             </div>
         </header>
 
         <!-- gallery section -->
         <section class="gallery">
             <h2>OUR FOOD</h2>
-            <div class="galleryGrid">
+            <div class="gallery-container">
                 <img src='img/food-avocadotoast.jpg'>
                 <img src='img/food-burger.jpg'>
                 <img src='img/food-poutine.jpg'>
@@ -133,10 +129,12 @@
             </div>
             <!-- nav -->
             <nav>
-                <a href="menu.html">Menu </a>
-                <a href="#">Reservations </a>
-                <a href="#">Special Offers</a>
-                <a href="#">Contact</a>
+                <div class="linksWrapper">
+                    <a href="menu.html">Menu </a>
+                    <a href="#">Reservations </a>
+                    <a href="#">Special Offers</a>
+                    <a href="#">Contact</a>
+                </div>
             </nav>
             <!-- copyright -->
             <small>©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</small>

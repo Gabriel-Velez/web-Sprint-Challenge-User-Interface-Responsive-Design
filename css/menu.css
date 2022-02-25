@@ -193,7 +193,7 @@ header {
     height: 100vh;
     background-image: url('../img/menu-header.jpg');
     background-size: cover;
-    background-position: center;
+    background-positi on: center;
     background-repeat: no-repeat;
 }
 
@@ -206,7 +206,7 @@ header {
     padding: 50px;
 }
 
-nav {
+.linksWrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -214,7 +214,8 @@ nav {
 
 .smWrapper i {
     margin: 0 50px;
-    font-size: 3rem
+    font-size: 3rem;
+    margin-top: 25px;
 }
 
 
@@ -276,7 +277,7 @@ footer {
     width: 100px;
 }
 
-footer nav {
+footer .linksWrapper {
     width: 60%;
 }
 
@@ -299,7 +300,8 @@ footer small {
 .menuGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px 200px;
+    gap: 100px 5%;
+    margin: auto;
 }
 
 .menu-section {
@@ -307,22 +309,22 @@ footer small {
     flex-direction: column;
 }
 
-.menuItem {
+.menu-item {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.menuItem h4 {
+.menu-item h4 {
     width: 80%;
 }
 
-.menuItem h4:nth-child(2) {
+.menu-item h4:nth-child(2) {
     width: 20%;
     text-align: right;
 }
 
-.menuItem p {
+.menu-item p {
     width: 100%;
     font-size: 2rem;
 }
@@ -361,10 +363,10 @@ i {
         flex-direction: column;
         padding: unset;
     }
-    nav {
+    .linksWrapper {
         flex-direction: column;
     }
-    .smWrapper a {
+    .smWrapper i {
         margin: 0 15px;
     }
     h1 {
@@ -382,10 +384,44 @@ i {
     .mailList input {
         width: 80%;
     }
-    footer nav {
+    footer .linksWrapper {
         width: unset;
     }
     footer small {
         text-align: center;
+    }
+    .menuGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+    .menu {
+        padding: 50px;
+        background: white;
+    }
+    .menu h2,
+    .menu h3,
+    .menu h4,
+    .menu hp,
+    .menu i,
+    .menu p,
+    .menu-item h4:nth-child(2) {
+        color: black;
+        text-align: center;
+        width: 100%;
+    }
+    .menu h2 {
+        font-weight: 700;
+        border-bottom: 20px solid black;
+    }
+    .menu-section h3 {
+        border: 5px solid black;
+    }
+    .menu-item {
+        border-bottom: 5px solid black;
+        padding-bottom: 25px;
+    }
+    .menu-sectionDessert {
+        width: 100%;
     }
 }
